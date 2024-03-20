@@ -1,0 +1,12 @@
+{
+	"gold": 0,
+	"main_character": [
+		{
+			"name": "empty",
+			"level": 0,
+			"health": 0,
+			"exp": 0
+		}
+	],
+	"position" : 0
+}

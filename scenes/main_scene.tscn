@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://bwmv4ggyrqvl3"]
 
-[ext_resource type="Texture2D" uid="uid://cuvbh4llvd4lg" path="res://icon.svg" id="1_0g72d"]
-[ext_resource type="Script" path="res://MainCharacter.gd" id="1_87tbh"]
-[ext_resource type="Script" path="res://Game.gd" id="1_p5scn"]
+[ext_resource type="Texture2D" uid="uid://cuvbh4llvd4lg" path="res://assets/icon.svg" id="1_0g72d"]
+[ext_resource type="Script" path="res://scripts/MainScene.gd" id="1_c6rgr"]
+[ext_resource type="Script" path="res://scripts/MainCharacter.gd" id="2_p3f0l"]
 [ext_resource type="PackedScene" uid="uid://cxdgd1xayi4a1" path="res://scenes/prototype_interactable_object.tscn" id="4_fpxf2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_axlyc"]
@@ -12,14 +12,14 @@ size = Vector2(126.5, 125)
 z_as_relative = false
 y_sort_enabled = true
 position = Vector2(-1, -3)
-script = ExtResource("1_p5scn")
+script = ExtResource("1_c6rgr")
 
 [node name="MainCharacter" type="RigidBody2D" parent="."]
 z_as_relative = false
 scale = Vector2(1, 1.03361)
 gravity_scale = 0.0
 lock_rotation = true
-script = ExtResource("1_87tbh")
+script = ExtResource("2_p3f0l")
 
 [node name="Icon" type="Sprite2D" parent="MainCharacter"]
 scale = Vector2(0.5, 0.5)
@@ -30,6 +30,7 @@ scale = Vector2(0.498985, 0.5)
 shape = SubResource("RectangleShape2D_axlyc")
 
 [node name="Camera2D" type="Camera2D" parent="MainCharacter"]
+zoom = Vector2(1.5, 1.5)
 
 [node name="Prototype_interactable_object" parent="." instance=ExtResource("4_fpxf2")]
 position = Vector2(157, 2)

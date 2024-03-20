@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://cxdgd1xayi4a1"]
 
-[ext_resource type="Texture2D" uid="uid://cuvbh4llvd4lg" path="res://icon.svg" id="1_de343"]
-[ext_resource type="Script" path="res://InteractableObj.gd" id="1_rngx1"]
+[ext_resource type="Script" path="res://scripts/InteractableObj.gd" id="1_smmvo"]
+[ext_resource type="Texture2D" uid="uid://cuvbh4llvd4lg" path="res://assets/icon.svg" id="2_1tcqe"]
 [ext_resource type="Texture2D" uid="uid://bmlf5jgxdwtm5" path="res://assets/ui_elements/Keyboard Letters and Symbols.png" id="3_4uktu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3bes5"]
@@ -32,11 +32,11 @@ z_as_relative = false
 gravity_scale = 0.0
 lock_rotation = true
 freeze = true
-script = ExtResource("1_rngx1")
+script = ExtResource("1_smmvo")
 
 [node name="Icon" type="Sprite2D" parent="RigidBody2D"]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("1_de343")
+texture = ExtResource("2_1tcqe")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
 scale = Vector2(0.5, 0.5)
