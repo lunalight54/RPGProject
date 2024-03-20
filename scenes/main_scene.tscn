@@ -33,4 +33,4 @@ shape = SubResource("RectangleShape2D_axlyc")
 zoom = Vector2(1.5, 1.5)
 
 [node name="Prototype_interactable_object" parent="." instance=ExtResource("4_fpxf2")]
-position = Vector2(157, 2)
+position = Vector2(240, 131)
